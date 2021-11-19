@@ -1,0 +1,232 @@
+<!--comenzamos creando la estrucura basica
+de un documento html escribiendo <html y 
+teclenado enter para autocompletar, lo que creara
+la estructura que se llenara como se menciona a continuación...-->
+
+<!--indica el tipo de docuemnto-->
+<!DOCTYPE html> 
+<!--dentro de l etiqueta html esta todo el contenido del documento html-->
+<html> 
+<!------------encabezado de pagina----------->
+<!--dentro de la etiqueta head esta el encabezado del documento html-->
+<head> 
+	<title>Feria virtual del libro</title> <!--dentro de la etiqueta tittle esta el titulo de la página-->
+	<link rel='stylesheet' href='estilos.css'/> <!--dentro de esta etiqueta esta la referencia a la hoja de estilos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--viewport para trabajar responsive design-->
+</head>
+
+<!------------body de pagina----------->  
+<!--dentro de la estiqueta body tipicamente esta todo lo que contendra página-->
+<body> 
+
+
+	<!--dentro de la estiqueta header esta todo lo que sera el encanbezado de la página, pudiendo colocarse dentro del body o antes del body-->
+	<header class='menu-container' id="inicio">
+
+      <div class='identificador'>
+        <!----modificar nombre y ruta de la imagen para cambiar el logo por el propio----->
+       <img src="imagenesmias/logo.png">
+      </div>
+
+      <div class='ligas-secciones'>
+      	<!----modificar nombre de la seccion acorde a la necesidad----->
+          <a href="#secc1">FERIA VIRTUAL</a>
+          <a href="#secc2">DESTACADOS</a>
+          <a href="#secc3">SINOPSIS</a>
+          <a href="#secc4">AUTORES</a>
+          
+        </div>
+
+    </header>
+
+ 
+
+
+	<!--contenedor que agrupa todos los contenedores que tienen los contenidos de cada sección que aprecen entre el encabezado y pie de pagina-->
+    <main class="secciones">
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc1">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>FERIA VIRTUAL</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección 1, OJO: este tiene un layout para dos imagenes-->
+    		<div class="imgs-secc-1">
+    			<!--contenedor con las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenesmias/bannerferia.jpg" title="Feria virtual">
+	       
+    			</div>
+    			<!--contenedor los dos textos de las dos imagenes en su version de escritorio-->
+    			<div class="par-imgs-escritorio">
+    				<!--texto para imagen a la izquierda-->
+	        		<p>La promoción de la lectura es una práctica social dirigida a transformar positivamente las maneras de percibir, sentir, valorar, imaginar, usar, compartir y concebir. la lectura como una construcción sociocultural, que ahora podemos disfrutar de manera virtual.</p>
+	        		<!--texto para imagen a la derecha-->
+	       
+        		</div>
+        		<!--contenedor con las dos imagenes en su version mobile-->
+        		<div class="par-imgs-mobile">
+    				<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1a.png" title="Img 1a">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        		<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	        		<img src="imagenes/img1b.png" title="Img 1b">
+	        		<!--texto para la imagen-->
+	        		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc2">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>DESTACADOS</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        
+		        <br><!--etiqueta para un brinco de renglón-->
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    		
+
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        		<img  src="imagenesmias/libronineteen.jpg" title="Nineteen eighty four">
+        		<br/>
+        		<img src="imagenesmias/libromundo.jpg"  title="Un mundo feliz">
+        		<br/>
+        		<img src="imagenesmias/libromente.jpg"  title="La violación de la mente">
+        		<!--texto para la imagen-->
+        		<p><i>Libros destacados del mes, autores que fueron visionarios a través del tiempo.</i></p>
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc3">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>SINOPSIS</h1>
+		        <h2>1984</h2>
+		        <h3><i> George Orwell</i></h3>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>El personaje principal de la novela es Winston Smith, que trabaja en el ministerio de la verdad, su cometido es reescribir la historia, ironizando así el ideal declarado en el nombre del ministerio. <br/> Tras años trabajando en dicho ministerio Winston Smith se va volviendo consciente de los retoques de la historia en lo que consiste su trabajo son solo una parte de la gran farsa en la que se basa su gobierno, y descubre la falsedad intencionada de todas las informaciones procedentes del Partido Único. En su búsqueda por evadir la omnipresente vigilancia del Gran Hermano (que llega inclusive a todas las casas) encuentra el amor de una joven rebelde llamada Julia, también desengañada del sistema político; ambos encarnan así una resistencia de dos contra una sociedad que se vigila a sí misma.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+
+		        <h2>Un mundo feliz</h2>
+		        <h3><i> Aldous Huxley</i></h3>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Esta novela describe un mundo futurista, utópico, altamente regulado y tecnológico. Arranca con la visita por parte de un grupo de estudiantes al Centro de Incubación y Condicionamiento de Londres. Allí, el director de la fábrica explica a los jóvenes cómo se divide a la población, ya desde su incubación. Así, según su condición genética, previamente alterada, la sociedad se divide desde los Alpha hasta los Epsilon, de mayor a menor inteligencia.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+
+		        <h2>La violación de la mente</h2>
+		        <h3><i> Joost Meerloo </i></h3>
+
+		         <p>El libro recibió una gran atención en parte porque trataba sobre las aplicaciones totalitarias de las técnicas de lavado de cerebro durante la Guerra de Corea. Meerloo escribe que la libertad y la democracia dependen en parte de la educación para la libertad mental, ayudando a niños y adultos a pensar por sí mismos y a ver lo esencial de un problema, ayudándolos a comprender conceptos, no simplemente a memorizar hechos.
+						</p>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen">
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+        	
+        		<!--texto para la imagen-->
+        	
+    		</div>
+
+    	</div>
+
+    	<!--contenedor para contenidos de cada sección-->
+    	<div class='seccion-contenedor' id="secc4">
+    		<!--contenedor para el texto de cada sección-->
+    		<div class="texto-secc">
+    			<!--si se quiere modificar contenido susutituir el texto entre las etiquetas de texto tipo h1-->
+		        <h1>AUTORES</h1>
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		       <h2>GEORGE Orwell</h2>
+		       <br/>
+		       <img  src="imagenesmias/george.jpg" title="George Orwell" >
+        		<br/>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>George Orwell (Motihari, India, 1903 - Londres, 1950), cuyo nombre real era Eric Arthur Blair, fue novelista, ensayista brillante y maestro de periodistas. Podría decirse que su breve vida resume los sueños y las pesadillas del mundo occidental en el siglo XX.</p>
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <h2>ALDOUS Huxley</h2>
+		        <br/>
+		        <img src="imagenesmias/aldous.png" title="Aldous Huxley">
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Fue un escritor, poeta y filósofo inglés en el seno de una importante familia de intelectuales. Desde muy joven empezó a sufrir graves problemas que afectaban a su visión.Huxley se graduó en literatura inglesa en Oxford. Una vez finalizados sus estudios realizó diferentes viajes por Europa como crítico de arte y literatura.Sus primeras creaciones fueron poemarios, más tarde comenzó a escribir sus primeras novelas. No fue hasta 1932 cuando publicó su obra más famosa Un mundo feliz.
+						</p>
+						<h2>JOOST Meerloo</h2>
+		        <br/>
+		        <img src="imagenesmias/joost.jpg" title="Joost Meerloo">
+		        <br><!--etiqueta para un brinco de renglón-->
+		        <!--si se quiere modificar contenido susutituir el texto entre las etiquetas de parrafo-->
+		        <p>Nacido como Abraham Maurits Meerloo en La Haya, Países Bajos, Meerloo llegó a los Estados Unidos en 1946, se naturalizó en 1950 y recuperó la ciudadanía holandesa en 1972. El Dr. Meerloo ejerció la psiquiatría durante más de cuarenta años, se especializó en el área de las técnicas de control del pensamiento utilizadas por los regímenes totalitarios y otros.
+						</p>
+    		</div>
+    		<!--contenedor para las imagenes de la sección OJO: este tiene un layout para una imagen-->
+    		<div class="contenedor-imagen-secc4">
+    		
+
+    			<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+
+        		<!--texto para la imagen-->
+        
+    		</div>
+
+    	</div>
+
+
+    </main>
+
+    <!------------pie de pagina----------->
+    <!--dentro de la etiqueta footer esta todo lo que sera el pie de página, pudiendo colocarse dentro del body o despues del body-->
+	<footer>
+	   
+	    <div class='footer-item'>
+	      <!----modificar el href para que dirija una pagina especifica de facebook----->
+	      <a href="https://www.facebook.com/">
+	      	<img src="imagenesmias/face.png" title="Facebook">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de twitter----->
+	      <a href="https://twitter.com/">
+	      	<img src="imagenesmias/twitt.png" title="Twitter">
+	      </a>
+	      <!----modificar el href para que dirija una pagina especifica de instagram----->
+	      <a href="http://instagram.com/">
+	      	<img src="imagenesmias/insta.png" title="Instagram">
+	      </a>
+	    </div>
+
+	    <div class="copyright
+	    	<!----modificarlo con datos o mensaje propio----->
+	      <p style="">FERIA DEL LIBRO / 2021</p>
+	    </div>
+	    
+	  </footer>
+	<!------------------------------------>
+
+	<!---------enlace que regresa al inicio de la pagina--------->
+	<!--dentro de la etiqueta "a" de tipo enlace esta la imagen que actua como icono que regresa al inicio de la página-->
+	    <a class="ir-arriba" title="Volver arriba" href="#inicio">
+	    	<!--si se quiere modificar contenido susutituir la imagen a la que referencia la etiqueta img-->
+	      	<img src="imagenesmias/flecha.png">
+	    </a>
+
+</body>
